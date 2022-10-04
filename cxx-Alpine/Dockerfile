@@ -1,6 +1,6 @@
 FROM alpine AS build
 
-RUN apk add g++ util-linux-dev
+RUN apk add g++ util-linux-dev llvm-dev clang
 
 # Cleanup
 RUN strip /lib*/*.so* /usr/lib*/*.so* /usr/lib/gcc*/*/*/*/*.so* || echo Ignoring invalid files 1>&2
