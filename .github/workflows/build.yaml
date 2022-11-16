@@ -19,6 +19,7 @@ jobs:
         # - cxx-CentOS6 # CentOS 6 is EOL, so this image does not need to be rebuilt each time
         - cxx-Trusty
         - cxx-Xenial
+        - nifty_pascal-linux
 
     steps:
     - uses: actions/checkout@v3
